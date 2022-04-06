@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <body style="color:Black; background-color:#def8ff">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Kazakh Conversion: Cyrillic to Latin Alphabet </title>
+    <meta name="Description" content="Online converter to kazakh to latin: Cyrillic-Latin alphabet">
+    <meta name="Keywords" content="қазақша, латынша, conversion, kazakh, alphabet, kazakh cyrillic to latin">
+    <link rel="alternate" type="application/rss+xml" title="KazConv" href="">
+    <link rel="stylesheet" href="../converter/css/style.min.css">
+    <script type="text/javascript" src="./js/conkaz.js"></script>
+    <script type="text/javascript" src="./js/clipboard.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav>
+                <a href="#" class="header_links"><img src="./img/logo.png" alt="Латын алфавитіне көшеміз"></a>
+                <a href="#" class="header_links"> <span> ҚАЗАҚША-QAZAQŞA</span> Online Kazakh Cyrillic-Latin conversion</a>
+            </nav>
+        </div>
+    </header>
+    <br>
+    
+    <div class="main">
+        <noscript>
+&lt;font color="red"&gt;Warning! JavaScript is disabled, the functionality of Lexilogos is unavailable.&lt;/font&gt;&lt;br&gt;
+You must enable JavaScript in your web browser : see the &lt;a class="ext" href="http://www.enable-javascript.com/" target="_blank"&gt;instructions&lt;/a&gt;.&lt;p&gt; 
+</noscript>
+<div class="container">
+        <form name="transcription">
+            <table>
+                <tbody>
+                    <tr>
+                        <td> cyrillic alphabet<br>
+                            <textarea id="bar1" name="text1"  onkeyup="cyrlat()" class="cadr"></textarea>
+                            <br>
+                            <br>
+                            <input type="button" class="bf" data-clipboard-action="copy" data-clipboard-target="#bar1" value="Copy"> &nbsp; &nbsp;
+                            <input type="button" onclick="reset();transcription.text1.focus()" value="Delete" class="bf">
+                        </td>
+                        <td> Latin alphabeti: <br>
+                            <textarea id="bar2" name="text2"  onkeyup="latcyr()" class="cadr"></textarea>
+                            <br>
+                            <br>
+                            <input type="button" class="bf" data-clipboard-action="copy" data-clipboard-target="#bar2" value="Copy"> &nbsp; &nbsp;
+                            <input type="button" onclick="reset();transcription.text2.focus()" value="Delete" class="bf">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <script>
+                var clipboard = new Clipboard('.bf');
+                clipboard.on('success', function(e) {
+                    console.log(e);
+                });
+                clipboard.on('error', function(e) {
+                    console.log(e);
+                });
+            </script>
+        </form>
+    </div>
+</div>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? " https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js ' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script src="./js/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+        var pageTracker = _gat._getTracker("UA-122422-1");
+        pageTracker._initData();
+        pageTracker._trackPageview();
+    </script>
+   
+    <section id="about">
+        <div class="container">
+            <h1>Kazakh Alphabet Timeline</h1>
+            <div class="card_wrap">
+                <div class="card">
+                    <img class="img-circle img-responsive" src="http://www.alipbi.com/wp-content/themes/alipbi/img/about/arb.jpg" alt="">
+                    <h4>Kazakh Arabic Alphabet</h4>
+                    <h6>11 Century - 1927</h6>
+                    <p>The Arabic script is still the official alphabet for Kazakhs in the People's Republic of China. It was first introduced to the territory of Kazakhstan in the eleventh century, and was traditionally used to write Kazakh
+                        until the introduction of a Latin alphabet in 1927.
+                    </p>
+                </div>
+                <div class="card">
+                    <img class="img-circle img-responsive" src="http://www.alipbi.com/wp-content/themes/alipbi/img/about/lat.jpg" alt="">
+                    <h4>Kazakh Latin Alphabet</h4>
+                    <h6>1927 - 1940</h6>
+                    <p>A Latin alphabet based on the Turkish alphabet is unofficially used by the Kazakh diaspora in Turkey. The Kazakh diaspora also uses a surrogate Latin alphabet in Germany, the US and in other Western countries. As with
+                        other Central Asian Turkic languages, a Latin alphabet was introduced by the Soviets and used from 1927 to 1940 when it was replaced with Cyrillic (<i>Wikipedia</i>).
+                    </p>
+                </div>
+                <div class="card">
+                    <img class="img-circle img-responsive" src="http://www.alipbi.com/wp-content/themes/alipbi/img/about/cyr.jpg" alt="">
+                    <h4>Kazakh Cyrillic Alphabet</h4>
+                    <h6>1940 - present</h6>
+                    <p>The Cyrillic script is officially used in the Republic of Kazakhstan and Bayan-Ölgiy Province in Mongolia. It is also used by native Kazakh populations belonging to the areas of Kyrgyzstan, Russia, Turkmenistan and
+                        Uzbekistan, as well as diasporas in other countries of the former USSR. </p>
+                </div>
+                <div class="card">
+                    <img class="img-circle img-responsive" src="http://www.alipbi.com/wp-content/themes/alipbi/img/about/lat_now.jpg" alt="">
+                    <h4>Kazakh Latin Alphabet</h4>
+                    <h6>2007</h6>
+                    <p>On December 13, 2007, Nursultan Nazarbayev, president of Kazakhstan, offered not to advance the transformation of the Kazakh alphabet from the Cyrillic to Latin one, as he noted: "For 70 years, the Kazakhstanis read
+                        and wrote in Cyrillic. More than 100 nationalities live in our state. 
+                       </p>
+                </div>
+                <div class="card">
+                    <img class="img-circle img-responsive" src="../converter/img/alphabet.jpeg" alt="">
+                    <h4>QAZAQ ÄLIPBÏI</h4>
+                    <h6>2025</h6>
+                    <p>Until 2025, by the Decree of the President of the Republic of Kazakhstan, a gradual translation of the Kazakh language into the Latin alphabet will take place. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <nav>
+                <a href="#" class="footer_links">Site by L'ime team</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
