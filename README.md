@@ -1,2 +1,2 @@
-# converter
+# Converter
 project-converter "Qazaqça-Қазақша"
